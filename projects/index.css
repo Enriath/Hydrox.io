@@ -1,86 +1,66 @@
-body
+main#main
 {
-	background-color: #222222;
-	color:#dddddd;
-	font-family: "Helvetica Neue","Arial","sans-serif";
-	font-size: 16px;
-	line-height: 1.6em;
-	letter-spacing: 0em;
-	font-weight: normal;
-	font-style: normal;
+	width:100%;
 }
 
-div.main
+
+section.proj-tile
 {
-	padding-top: 50px;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-bottom: 10px;
-	max-width: 50em;
-	margin: 0 auto;
-	text-align: center;
+	background-color: #444444;
+	padding: 20px 20px;
+	text-align: left;
+	border-radius: 3px;
+	word-wrap: break-word;
+	float:left;
+	margin:5px;
 }
 
-p.site-tagline
+section.proj-tile.solo
 {
-	font-size: 14px;
-	line-height: 1.2em;    
-	text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: .05em;
-    font-weight: normal;
-    font-style: normal;
-    color: #ddd;
+	width:calc(100% - 3em);
+	max-width: 100%;
 }
 
-nav.nav ul
+section.proj-tile.duo
 {
-	padding-left: 0;
-	text-align: center;
-	margin-top: 0;
+	width:auto;
+	max-width: 50%;
+	min-width: calc(50% - 50px);
 }
 
-li.nav-item
+@media (max-width: 840px)
 {
-	display: inline-block;
-	margin-right: 0.1em;
+	section.proj-tile.duo
+	{
+		/*Holy shit thank you Chris Coyier for 
+		writing about calc(). Saved my damn life 
+		on this bug.*/
+		width:calc(100% - 3em);
+		max-width: 100%;
+	}
 }
 
-li.nav-item a
+h1.proj-name
 {
-	text-transform: uppercase;
-	font-size: 14px;
-	text-decoration: none;
-	font-weight: bold;
-	letter-spacing: .05em;
-	line-height: 1.2em;
-}
-
-h1.site-title a
-{
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 64px;
+	margin:0px;
+	font-size: 26px;
 	font-weight: bold;
 }
 
-a
+a.proj-button
 {
-	text-decoration: underline;
-	text-transform: none;
-}
-
-a:visited
-{
+	background-color: #333333;
 	color:#dddddd;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 3px;
+	float: left;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
 }
 
-h1.site-title a:hover
+h1.cent-head
 {
-	color:#dddddd;
-}
-
-a:hover
-{
-	color:#999999;
+	font-size: 3em;
 }
