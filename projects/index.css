@@ -24,7 +24,7 @@ section.proj-tile.solo
 section.proj-tile.duo
 {
 	width:auto;
-	max-width: 50%;
+	max-width: 43.5%;
 	min-width: calc(50% - 50px);
 }
 
@@ -58,6 +58,14 @@ a.proj-button
 	text-decoration: none;
 	font-size: 14px;
 	font-weight: bold;
+}
+
+p.proj-status
+{
+	font-weight: 600;
+	padding-top: 10px;
+	margin-left: 150px;
+
 }
 
 h1.cent-head
