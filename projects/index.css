@@ -65,10 +65,15 @@ p.proj-status
 	font-weight: 600;
 	padding-top: 10px;
 	margin-left: 150px;
-
 }
 
 h1.cent-head
 {
 	font-size: 3em;
+}
+
+div.spacer
+{
+	margin-bottom: 2.57em;
+	display: block;
 }
