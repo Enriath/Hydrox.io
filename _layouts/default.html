@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <meta name=viewport content="initial-scale=1">
+    <style>
+      body{background-color: #222222;}
+      a{color:#dddddd;}
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="site-header">
+        <!--Title-->
+        <h1 class="site-title">
+          <a href="http://hydrox.io">{{ site.name }}</a>
+        <h1>
+        <!--Tagline-->
+        <p class="site-tagline">{{ site.description }}</p>
+        <!--Nav-->
+        <nav class="nav">
+          <ul>
+            <li class="nav-item">
+              <a href="{{ site.baseurl }}/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="{{ site.baseurl }}/projects">Projects</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="line"></div>
+      <main id="main">
+        {{content}}
+      </main>
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  </body>
+</html>
