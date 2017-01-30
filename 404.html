@@ -1,11 +1,12 @@
 ---
 permalink: /404.html
+title: 404
 ---
 
 <head>
 	<!--Mobile Compatability HO!-->
 	<meta name=viewport content="initial-scale=1">
-	<title>404 - Hydrox.IO</title>
+	<title>{{ page.title }} - {{ site.name }}</title>
 	<!--Fixes for links loading blue & non-dark theme whilst loading on mobile/slow internet-->
 	<style>
 		body{background-color: #222222;}
@@ -22,7 +23,7 @@ permalink: /404.html
 		<header class="site-header">
 			<!--Title-->
 			<h1 class="site-title">
-				<a href="http://hydrox.io/">Hydrox.IO</a>
+				<a href="http://hydrox.io/">{{ site.name }}</a>
 			<h1>
 			<!--Tagline-->
 			<p class="site-tagline">I see you've found the 404 Konchu</p>
@@ -30,10 +31,10 @@ permalink: /404.html
 			<nav class="nav">
 				<ul>
 					<li class="nav-item">
-						<a href="http://hydrox.io/blog">Blog</a>
+					  <a href="{{ site.url }}/blog">Blog</a>
 					</li>
 					<li class="nav-item">
-						<a href="http://hydrox.io/projects">Projects</a>
+					  <a href="{{ site.url }}/projects">Projects</a>
 					</li>
 				</ul>
 			</nav>
@@ -44,6 +45,6 @@ permalink: /404.html
 		</main>
 		<a id="konchusrc" href="https://www.youtube.com/watch?v=7ALQCWUlinM" alt="Source"><img id="konchu" src="https://i.imgur.com/cC5NwXE.gif" alt="Konchu"></a>
 	</div>
-	<link rel="stylesheet" href="http://hydrox.io/base.css">
+	<link rel="stylesheet" href="http://hydrox.io/style.css">
 </body>
 </html>
