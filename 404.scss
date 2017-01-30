@@ -1,0 +1,42 @@
+---
+---
+@import "base";
+
+body{background-color: #222222;}
+
+a{color:#dddddd;}
+
+main#main
+{
+	font-size: 100px;
+	padding-top : 20px;
+	font-weight: 500;
+	padding-bottom: 20px;
+	z-index: 2;
+	position:relative;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+header
+{
+	position: relative;
+	z-index: 2;
+}
+
+img#konchu
+{
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	margin:0 auto;
+	margin-top:-70%;
+}
+
+a#konchusrc
+{
+	position: relative;
+	z-index: 1;
+}
+
+@media (max-width: 840px){img#konchu{margin-top:-100%;}main#main{font-size: 50px;}}
