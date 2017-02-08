@@ -99,3 +99,18 @@ div.line
 	border: none;
 	width: 70%;
 }
+
+section#social
+{
+	display:block;
+	float:left;
+	height:48px;
+	width:100%;
+	text-align: center;
+	margin-top: 12px;
+}
+
+section#social > a, section#social > a > img
+{
+	height:inherit;
+}
